@@ -31,3 +31,39 @@ const menuBtn = document.querySelector(".menu-btn");
 if (menuBtn) {
   menuBtn.addEventListener("click", toggleMenu);
 }
+
+  const aboutButtons = document.querySelectorAll('.about-btn');
+  const overlay = document.getElementById('project-overlay');
+  const closeBtn = document.querySelector('.close-btn');
+
+  const overlayImg = document.getElementById('overlay-img');
+  const overlayTitle = document.getElementById('overlay-title');
+  const overlayDesc = document.getElementById('overlay-description');
+  const overlayTagsContainer = document.getElementById('overlay-tags');
+
+  aboutButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    overlayTitle.textContent = btn.dataset.title;
+    overlayImg.src = btn.dataset.img;
+    overlayDesc.textContent = btn.dataset.description;
+
+    overlayTagsContainer.innerHTML = '';
+
+    if (btn.dataset.stack) {
+      const stackList = btn.dataset.stack.split(',');
+      stackList.forEach(tech => {
+        const tag = document.createElement('span');
+        tag.className = 'tech-tag';
+        tag.textContent = tech.trim();
+        overlayTagsContainer.appendChild(tag);
+      });
+    }
+
+    overlay.classList.remove('hidden');
+  });
+});
+
+  closeBtn.addEventListener('click', () => overlay.classList.add('hidden'));
+  window.addEventListener('click', (e) => {
+  if (e.target === overlay) overlay.classList.add('hidden');
+});
