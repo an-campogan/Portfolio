@@ -21,6 +21,18 @@ a,
   transition: all 300ms ease ;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+
 nav,
 .nav-links {
   display: flex;
@@ -29,13 +41,20 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 10vh;
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.3rem;
+}
+
+.nav-links a.active {
+  color: #cf8d64;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 a {
@@ -50,6 +69,7 @@ a:hover {
   text-underline-offset: 10px;
   text-decoration-color: #cccccc;
 }
+
 
 .logo {
   font-size: 1.7rem;
