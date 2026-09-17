@@ -22,6 +22,7 @@
 
   #about .section__pic-container {
     margin: 0 auto;
+    width: 100%;
   }
 
   section {
