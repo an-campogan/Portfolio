@@ -139,6 +139,11 @@
     max-width: 400px;
   }
 
+  #myprojects .details-container color-container {
+    width: 90%;
+    margin: auto;
+  }
+
   .article-container {
     gap: 1rem;
     justify-content: flex-start;
