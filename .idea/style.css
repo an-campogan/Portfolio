@@ -70,7 +70,6 @@ a:hover {
   text-decoration-color: #cccccc;
 }
 
-
 .logo {
   font-size: 1.7rem;
 }
@@ -157,12 +156,6 @@ a:hover {
   transform: none;
 }
 
-.circle-photo {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-}
-
 section {
   padding-top: 4vh;
   height: fit-content;
@@ -184,6 +177,12 @@ section {
   height: 80vh;
 }
 
+.circle-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
 .section__pic-container {
   display: flex;
   height: 400px;
@@ -191,46 +190,52 @@ section {
   margin: auto 0;
 }
 
-
-.section__text {
-  align-self: center;
-  text-align: center;
+#profile .section__text {
+  align-self: flex-start;
+  text-align: left;
+  margin: auto 0;
 }
 
 .section__text p {
   font-weight: 600;
 }
 
-.section__text__p1 {
-  text-align: center;
+#profile .section__text__p1 {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border: 0.1rem solid #532001;
+  border-radius: 2rem;
+  color: #532001;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
-.section__text__p2 {
+#profile .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
-.section__text__p3 {
+#profile .section__text__p3 {
   font-size: 1rem;
   margin-bottom: 2rem;
 }
 
-.title {
+#profile .title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
 }
 
-#socials-container {
+#profile #socials-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 1rem;
   gap: 1rem;
 }
 
 
-.btn-container {
+#profile .btn-container {
   display: flex;
-  justify-content: center;
+  justify-content:flex-start;
   gap: 0.5rem;
   padding-bottom: 5px;
 }
@@ -246,10 +251,11 @@ section {
 .btn-color-1,
 .btn-color-2 {
   border: black 0.1rem solid;
+  background: white;
 }
 
 .btn-color-1:hover {
-  background-color: #888888;
+  background-color: #e3a379;
 }
 
 .btn-color-2 {
@@ -257,7 +263,7 @@ section {
 }
 
 .btn-color-2:hover {
-  background: #888888;
+  background: #E3A379FF;
 }
 
 .btn-container {
@@ -272,6 +278,12 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+#about .title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .about-details-container {
@@ -307,7 +319,7 @@ section {
 #about .section-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   gap: 4rem;
   height: auto;
 }
@@ -317,6 +329,10 @@ section {
   width: 380px;
   flex-shrink: 0;
   margin: 0;
+}
+
+#about .container-title {
+  margin-bottom: 1rem;
 }
 
 #about .about-pic {
