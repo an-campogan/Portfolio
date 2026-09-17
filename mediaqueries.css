@@ -113,11 +113,12 @@
   }
 
   #about .about-pic {
-    width: 90%;
+    width: 95%;
     height: 100%;
     object-fit: cover;
     border-radius: 2rem;
     align-items: center;
+    justify-items: center;
   }
 
   .experience-details-container {
