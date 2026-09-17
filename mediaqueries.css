@@ -113,10 +113,9 @@
     align-items: center;
   }
 
-  #about .about-pic {
+  #about .section_pic-container {
     width: 95%;
     height: 100%;
-    object-fit: cover;
     border-radius: 2rem;
     align-items: center;
     justify-items: center;
@@ -137,11 +136,6 @@
     flex: 1 1 100%;
     width: 80%;
     max-width: 400px;
-  }
-
-  #myprojects .details-container color-container {
-    width: 90%;
-    margin: auto;
   }
 
   .article-container {
@@ -191,6 +185,7 @@
   .contact-info-container {
     width: 80%;
     margin: auto;
+    font-size: smaller;
   }
 
   .contact-info-upper-container {
