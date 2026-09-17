@@ -109,6 +109,15 @@
   .about-details-container {
     width: 80%;
     margin: auto;
+    align-items: center;
+  }
+
+  #about .about-pic {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    align-items: center;
   }
 
   .experience-details-container {
