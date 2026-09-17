@@ -132,7 +132,7 @@
     align-items: center;
   }
 
-  #myprojects .details-container {
+  #myprojects .details-container color-container {
     flex: 1 1 100%;
     width: 80%;
     max-width: 400px;
