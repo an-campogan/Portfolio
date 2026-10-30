@@ -1,4 +1,4 @@
-/* ---------- Hamburger menu ---------- */
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
@@ -6,7 +6,6 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-/* ---------- Active nav link on scroll ---------- */
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll("#site-nav a");
 
@@ -26,7 +25,6 @@ const observer = new IntersectionObserver(
 
 sections.forEach((section) => observer.observe(section));
 
-/* ---------- Project About overlay ---------- */
 const aboutButtons = document.querySelectorAll(".about-btn");
 const overlay = document.getElementById("project-overlay");
 const closeBtn = document.querySelector(".close-btn");
@@ -62,7 +60,6 @@ window.addEventListener("click", (e) => {
   if (e.target === overlay) overlay.classList.add("hidden");
 });
 
-/* ---------- Project filter (All / Software / Hardware) ---------- */
 const filterBtns = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll("#myprojects .details-container");
 const noProjects = document.getElementById("no-projects");
@@ -88,7 +85,6 @@ filterBtns.forEach((btn) => {
   });
 });
 
-/* ---------- Contact form (Formspree) ---------- */
 const form = document.querySelector(".contact-form");
 const statusText = document.getElementById("form-status");
 
@@ -118,7 +114,6 @@ form.addEventListener("submit", async (e) => {
   btn.disabled = false;
 });
 
-/* ---------- Night mode toggle ---------- */
 const themeToggles = document.querySelectorAll(".theme-toggle");
 
 function applyTheme(isDark) {
